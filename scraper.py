@@ -13,16 +13,16 @@ blue="\033[1;34m"
 defcol = "\033[0m"
 
 def error(msg):
-	print (red+"["+yellow+"!"+red+"] - "+defcol+msg)
+    print (red+"["+yellow+"!"+red+"] - "+defcol+msg)
 
 def alert(msg):
-	print (red+"["+blue+"#"+red+"] - "+defcol+ msg)
+    print (red+"["+blue+"#"+red+"] - "+defcol+ msg)
 
 def action(msg):
-	print (red+"["+green+"+"+red+"] - "+defcol+msg)
+    print (red+"["+green+"+"+red+"] - "+defcol+msg)
 
 def errorExit(msg):
-	sys.exit(red+"["+yellow+"!"+red+"] - "+defcol+"Fatal - "+ msg)
+    sys.exit(red+"["+yellow+"!"+red+"] - "+defcol+"Fatal - "+ msg)
        
 def getorders():
     name = sys.argv[1]
@@ -78,6 +78,9 @@ class scan_thread(threading.Thread):
             threadPool.task_done()
                
 if len(sys.argv) < 2:
+    print"\033[1;33m╔═╗╦═╗╔═╗═╗ ╦╦ ╦  ╔═╗╔═╗╦═╗╔═╗╔═╗╔═╗╦═╗"
+    print"\033[1;33m╠═╝╠╦╝║ ║╔╩╦╝╚╦╝  ╚═╗║  ╠╦╝╠═╣╠═╝║╣ ╠╦╝"
+    print"\033[1;33m╩  ╩╚═╚═╝╩ ╚═ ╩   ╚═╝╚═╝╩╚═╩ ╩╩  ╚═╝╩╚═"                                                                                                                                                                  
     errorExit("Usage: python scraper.py <output.txt> [-t threads] [-l yourlist] [-s sort]") 
 
 orders = getorders()
