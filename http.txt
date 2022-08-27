@@ -37,3 +37,5 @@ https://multiproxy.org/txt_all/proxy.txt
 http://rootjazz.com/proxies/proxies.txt
 https://raw.githubusercontent.com/clarketm/proxy
 http://k2ysarchive.xyz/proxy/http.txt
+https://proxyspace.pro/http.txt
+https://proxyspace.pro/https.txt
